@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-datagov",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Data.gov MCP — wraps Data.gov CKAN API (catalog.data.gov/api/3)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-6690cda0683bff1bebdb8222c1ab5983a792d368b19739fcb56edddd0abd0092",
-    "sourceCommit": "56d3c46c09bb3078ffdbdbca992a93f406bcd382"
+    "sourceHash": "v1-9ff85040c12d4dedf0bdaa235484608a43ae289524b6f930aed7228385a1d3c3",
+    "sourceCommit": "8355bf3d1eece256a62a89dba2278e7a77bebe07"
   }
 }
