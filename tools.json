@@ -1,0 +1,50 @@
+[
+  {
+    "name": "search_datasets",
+    "description": "Search U.S. government open datasets on Data.gov by keyword. Returns titles, descriptions, organizations, formats, and download URLs. Example: search_datasets(\"climate change\", organization: \"noaa-gov\").",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search keywords (e.g., \"climate change\", \"census population\")"
+        },
+        "organization": {
+          "type": "string",
+          "description": "Filter by organization slug (e.g., \"noaa-gov\", \"epa-gov\", \"nasa-gov\")"
+        },
+        "tags": {
+          "type": "string",
+          "description": "Filter by tag (e.g., \"health\", \"environment\")"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "get_dataset",
+    "description": "Get full metadata for a specific Data.gov dataset by its ID or name. Returns title, description, resources (download links), organization, tags, and update frequency.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Dataset ID or name slug from Data.gov"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    }
+  },
+  {
+    "name": "list_organizations",
+    "description": "List all organizations publishing datasets on Data.gov. Returns organization names and dataset counts. Useful for discovering data publishers.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]
